@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Web API and Web Job Demo</h1>
+    <p class="lead">
+        Demonstrating a Web API and the running of a web job on demand.
+        <h1></h1>
+        The web job is the simplest possible console app which prints 'Dummy output' ten times
+    </p>
+    <p>
+        <a href="@Url.Action("Index","Webjob", null)" class="btn btn-primary btn-lg">Run the web job &raquo;</a>
+    </p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Can I see how it works?</h2>
+        <p>
+            The source code can be viewed below
+        </p>
+        <p><a class="btn btn-default" href="https://github.com/martin-chambers/WebAPIDemoUI/">View the code for this UI &raquo;</a></p>
+        <p><a class="btn btn-default" href="https://github.com/martin-chambers/WebAPIDemo/">View the code for the Web API &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Is there a more detailed explanation of the web job set up?</h2>
+        <p>
+            This is based partly on a 'Future Processing' blog by MAREK ŚLEDZIŃSKI, which was one of the few short and simple introductions to
+            web job setup I found which didn't assume that you'd been working with Azure for years.
+        </p>
+        <p><a class="btn btn-default" href="https://www.future-processing.pl/blog/microsoft-azure-web-jobs-introduction/">Web job setup &raquo;</a></p>
+        <h2></h2>
+        <p>The Kudu trigger process is explained in a blog by Chris Kirby</p>
+        <p><a class="btn btn-default" href="http://chriskirby.net/running-your-azure-webjobs-with-the-kudu-api/">Web job trigger &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>So where's the API?</h2>
+        <p>Click below to view the endpoints and try them out</p>
+        <p><a class="btn btn-default" href="http://webapidemomcc.azurewebsites.net/#/Values">See the API &raquo;</a></p>
+    </div>
+</div>
